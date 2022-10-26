@@ -42,7 +42,7 @@
     while ($reg =mysqli_fetch_array($datos) ) { ?>
         <tr>
         <td><?php echo $reg['id']; ?></td>
-        <td><?php echo $reg['tipo_prenda']; ?></td>
+        <td><?php echo $reg['tipo de prenda']; ?></td>
         <td><?php echo $reg['marca']; ?></td>
         <td><?php echo $reg['talle']; ?></td>
         <td><?php echo $reg['precio']; ?></td>

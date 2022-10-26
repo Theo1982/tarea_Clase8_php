@@ -33,7 +33,7 @@
     // SELECT campos_tabla FROM nombre_tabla
     // => Selecciona los siguientes campos de la siguiente tabla
 
-    $consulta= "SELECT*FROM ropa WHERE tipo_prenda = 'buzo'";
+    $consulta= "SELECT*FROM ropa WHERE `tipo de prenda` = 'buzo'";
     
     // 3) Ejecutar la orden y obtenemos los registros
     $datos= mysqli_query ($conexion, $consulta);
@@ -42,7 +42,7 @@
     while ($reg =mysqli_fetch_array($datos) ) { ?>
         <tr>
         <td><?php echo $reg['id']; ?></td>
-        <td><?php echo $reg['tipo_prenda']; ?></td>
+        <td><?php echo $reg['tipo de prenda']; ?></td>
         <td><?php echo $reg['marca']; ?></td>
         <td><?php echo $reg['talle']; ?></td>
         <td><?php echo $reg['precio']; ?></td>
